@@ -1,0 +1,87 @@
+.profile-detail{
+    display: flex;
+    gap: 2vh;
+    background: #f7f6fb;
+    .user-profile{
+        display: flex;
+        width: 88vw;
+        padding: 2vh 2vw;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        border-radius: 4px;
+        .user-name{
+            margin-top: 2.5vh;
+            margin-bottom: 1.5vh;
+            font-size: 3.5vh;
+            text-align: center;
+            font-weight: 700;
+            color: rgb(21, 21, 61);
+        }
+        .user-profile-detail{
+            font-size: 1.8vh;
+            margin-bottom: 2.5vh;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+    .user-flex{
+        display: flex;
+        gap:1vw;
+        margin-bottom: 1.9vh;
+        width: 68%;
+        margin-left: 27vw;
+       
+        .label-title{
+            font-size: 1.9vh;
+            font-weight: 600;
+            color: #333;
+            line-height: normal;
+            width: 28%;
+        }
+        .label-desc{
+            font-size: 1.9vh;
+            font-weight: 500;
+            color: #333;
+            line-height: normal;
+        }
+    }
+    
+}
+
+@media(max-width:1024px){
+    .profile-detail{
+        .user-profile{
+            width: 94vw;
+            .user-flex{
+                margin-left: 27vw;
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .profile-detail{
+        .user-profile{
+            .user-flex{
+                margin-left: 14vw;
+                width: 89%;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .profile-detail{
+        .user-profile{
+            .user-flex{
+                margin-left: 5vw;
+                width: 96%;
+                .label-title, .label-desc{
+                    font-size: 1.5vh;
+                }
+            }
+        }
+    }
+}

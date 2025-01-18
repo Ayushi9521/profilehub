@@ -1,0 +1,70 @@
+.profile-card{
+    border-radius: 4px;
+    background: #fff;
+    padding: 3vh 1.3vw;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-in-out;
+    &:hover{
+        box-shadow: 2px 0px 8px 6px #e0e0ff;
+        transform: translateY(-10px);
+    }
+    img{
+        border-radius: 50%;
+        width: 10vw;
+        border: 3px solid rgb(191, 186, 186);
+        padding: 8px;
+        margin-bottom: 1vh;
+    }
+    .user-name{
+        color: #1e1d3e;
+        font-size: 2.2vh;
+        font-weight: 600;
+        margin-bottom: 1.5vh;
+    }
+    .email, .gender{
+        font-size: 1.5vh;
+        font-weight: 400;
+        color: rgb(194, 196, 199);
+        margin-bottom: 1vh;
+    }
+    .btn{
+        border: 1px solid rgb(193, 193, 214);
+        padding: 0.8vh 1.5vw;
+        border-radius: 30px;
+        font-size: 1.8vh;
+        color: rgb(153, 153, 232);
+        &:hover{
+            background: blue;
+            color: #fff;
+            box-shadow: 2px 4px rgb(119, 138, 222);
+        }
+    }
+}
+
+@media(max-width:1051.98px){
+    .profile-card{
+        width: 42%;
+        .btn{
+            padding: .8vh 3vw;
+        }
+    }
+}
+@media(max-width:768.98px){
+    .profile-card{
+        width: 48%;
+        .btn{
+            padding: .8vh 3vw;
+        }
+    }
+}
+@media(max-width:649.99px){
+    .profile-card{
+        width: 100%;
+        .btn{
+            padding: 1vh 5.5vw;
+        }
+    }
+}

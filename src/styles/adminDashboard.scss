@@ -1,0 +1,100 @@
+@import "./profileCard.scss";
+.admin-heading{
+    font-size: 2.8vh;
+    font-weight: 700;
+    color: rgb(20, 22, 43);
+    margin-bottom: 2vh;
+}
+.admin-container{
+    display: flex;
+    gap: 2vw;
+    .profile-card-container{
+        background-color: #fff;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2vh;
+        padding: 3vh 0;
+        .profile-card{
+            background-color: #f1f1f9;
+        }
+    }
+    .profile-sec-card{
+        background-color: #fff;
+        width: 25%;
+        padding: 3vh 2vw;
+        .profile-title{
+            font-size: 2.5vh;
+            font-weight: 600;
+            color: rgb(31, 31, 61);
+            margin-bottom: 2vh;
+        }
+        .pd-card{
+            padding: 2vh 1.8vw;
+            background: rgb(181 199 255 / 16%);
+            .profle-card-title{
+                font-size: 1.9vh;
+                font-weight: 500;
+                color: #517fcf;
+                margin-bottom: 1.5vh;
+            }
+            .profile-count{
+                font-size: 3vh;
+                font-weight: 700;
+                color: #333;
+                padding-left: 2vw;
+                &.blue{
+                    border-left: 5px solid blue;
+                }
+            }
+        }
+        .add-btn{
+            margin: 2.5vh auto;
+            font-size: 1.9vh;
+            font-weight: 600;
+            border-radius: 8px;
+            background: blue;
+            color: #fff;
+            display: flex;
+            padding: 10px 20px;
+            border: none;
+            &:hover{
+                color: blue;
+                background: #f1f1f9;
+            }
+        }
+    }
+}
+
+@media(max-width:1400px){
+    .admin-container{
+        .profile-card-container{
+            .profile-card{
+                width: 46%;
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .admin-container{
+        flex-direction: column-reverse;
+        .profile-card-container{
+            width: 100%;
+        }
+        .profile-sec-card{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .admin-container{
+        .profile-card-container{
+            .profile-card{
+                width: 90%;
+            }
+        }
+    }
+}

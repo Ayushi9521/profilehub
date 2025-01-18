@@ -1,0 +1,22 @@
+.admin-form{
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 2px 2px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    padding: 4vh 4vw;
+    .form-title{
+        color: rgb(41, 41, 155);
+        margin-bottom: 4vh;
+        text-align: center;
+    }
+    .profile-btn{
+        display: flex;
+        border: none;
+        border-radius: 8px;
+        background: rgb(37, 37, 106);
+        color: #fff;
+        padding: 2vh 3vw;
+        margin: 2vh auto;
+        
+    }
+}
