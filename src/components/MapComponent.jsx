@@ -33,7 +33,6 @@ function MapComponent() {
     const geocoder = new window.google.maps.Geocoder();
     try {
       const results = await geocoder.geocode({ address });
-      console.log("Geocoder Results:", results);
 
       if (results && results.results && results.results.length > 0) {
         return results.results[0].geometry.location;
@@ -64,7 +63,6 @@ function MapComponent() {
       }
 
       const fullAddress = `${city}, ${state}, ${country}`;
-      console.log("Geocoding Address:", fullAddress);
 
       const location = await getCoordinates(fullAddress);
 
