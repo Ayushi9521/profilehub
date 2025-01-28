@@ -19,7 +19,7 @@ function MapComponent() {
   );
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCurh8PbokTEID1dHAzn9g5THvRpLU1waQ",
+    googleMapsApiKey: "",
   });
 
   const [coordinates, setCoordinates] = useState(defaultCenter);
